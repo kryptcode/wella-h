@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import Cards from '../components/Landing/Cards'
+import Mentions from '../components/Landing/Mentions'
 import Services from '../components/Landing/Services'
 import Showcase from '../components/Landing/Showcase'
+import Testimonials from '../components/Landing/Testimonials'
 import Nav from '../components/Nav'
 
 export default function Home() {
@@ -16,6 +19,14 @@ export default function Home() {
       <div className='mb-6' />
       <Showcase />
       <Services />
+      <Mentions />
+      <div className='text-lg md:text-2xl font-semibold text-center w-[90%] md:w-[60%] mx-auto text-[#1B2124] py-16 '>
+        <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#07b6d3] to-[#479d5b] '>
+        32,000+ 
+        </span> Nigerians currently benefit from our affordable healthcares service
+      </div>
+      <Cards />
+      <Testimonials />
     </div>
   )
 }
